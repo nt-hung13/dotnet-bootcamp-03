@@ -113,12 +113,23 @@ namespace dotnet_bootcamp_03
                 bool usdInput = float.TryParse(Console.ReadLine(), out float usdAmount);
                 if (usdInput && usdAmount > 0)
                 {
-                    float vndAmount = usdAmount * vndExchangeRate;
+                    double vndAmount = usdAmount * vndExchangeRate;
                     Console.WriteLine($"{usdAmount} USD = {vndAmount} VND");
                     break;
                 }
                 Console.WriteLine("Invalid input.");
             }
+        }
+
+        static public string CountScoreAverage(int math, int physic, int chemis)
+        {
+            float averageScore = (math + physic + chemis)/3;
+            string result = "";
+            if (averageScore < 5) result = "Grade: Poor";
+            else if (averageScore >= 5 && averageScore < 6.5) result = "Grade: Average";
+            else if (averageScore >= 6.5 && averageScore < 8) result = "Grade: Good";
+            else result = "Grade: Excellent";
+            return result ;
         }
     }
 }
