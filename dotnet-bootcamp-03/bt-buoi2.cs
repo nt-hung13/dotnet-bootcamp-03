@@ -120,16 +120,5 @@ namespace dotnet_bootcamp_03
                 Console.WriteLine("Invalid input.");
             }
         }
-
-        static public string CountScoreAverage(int math, int physic, int chemis)
-        {
-            float averageScore = (math + physic + chemis)/3;
-            string result = "";
-            if (averageScore < 5) result = "Grade: Poor";
-            else if (averageScore >= 5 && averageScore < 6.5) result = "Grade: Average";
-            else if (averageScore >= 6.5 && averageScore < 8) result = "Grade: Good";
-            else result = "Grade: Excellent";
-            return result ;
-        }
     }
 }

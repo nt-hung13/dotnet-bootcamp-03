@@ -7,4 +7,4 @@ using dotnet_bootcamp_03;
 //bt_buoi2.TotalInvoice();
 //bt_buoi2.TimeConvertor();
 //bt_buoi2.SumAmountToPay();
-bt_buoi2.MoneyExchange();
+//bt_buoi2.MoneyExchange();
